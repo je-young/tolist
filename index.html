@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="01_TodoList.css">
+</head>
+
+<body>
+
+  <main id="wrap">
+    <!-- 등록 구간 -->
+    <h1 class="title"> TODO LIST </h1>
+    <div id="todoTop">
+      <input class="contentInput" type="text" placeholder="할일을 입력하세요." />
+      <button onclick="등록함수()" class="addBtn" type="button"> 등록 </button>
+    </div>
+
+    <!-- 리스트 화면 출력 구간 -->
+    <div id="todoBottom">
+      <div class="contentBox">
+        <h4 class="content"> 학원수업듣기 </h4>
+        <div class="contentBts">
+          <button onclick="수정함수()" class="updateBtn" type="button"> 수정 </button>
+          <button onclick="삭제함수()" class="deleteBtn" type="button"> 삭제 </button>
+        </div>
+      </div>
+
+      <div class="contentBox success">
+        <h4 class="content"> 장보기 </h4>
+        <div class="contentBtns">
+          <button onclick="수정함수()" class="updateBtn" type="button"> 수정 </button>
+          <button onclick="삭제함수()" class="deleteBtn" type="button"> 삭제 </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="01_TodoList.js"></script>
+</body>
+
+</html>
